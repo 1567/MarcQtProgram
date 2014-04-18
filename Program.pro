@@ -5,16 +5,19 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT       += widgets
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Program
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        widget.cpp
+SOURCES += main.cpp \
+    GraphPlot.cpp \
+    conductors.cpp
 
-HEADERS  += widget.h
+HEADERS  += \
+    GraphPlot.h \
+    conductors.h
 
-FORMS    += widget.ui
+FORMS    +=
